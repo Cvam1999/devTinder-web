@@ -5,7 +5,7 @@ const UserCard = ({user}) =>{
   <figure>
     <img
       src={user.photoUrl}
-      alt="Shoes" />
+      alt="image" />
   </figure>
   <div className="card-body">
     <h2 className="card-title">{firstName + " " + lastName}</h2>

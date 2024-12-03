@@ -3,12 +3,14 @@ import userReducer from "./userSlice";
 import feedReducer from "./feedSlice";
 import { connect } from "react-redux";
 import connectionReducer from "./connectionSlice";
+import requestReducer from "./requestSlice";
 
 const appStore = configureStore({
 reducer:{ 
     user : userReducer,
     feed : feedReducer,
-    connection : connectionReducer
+    connection : connectionReducer,
+    requests : requestReducer
 }
 });
 export default appStore;

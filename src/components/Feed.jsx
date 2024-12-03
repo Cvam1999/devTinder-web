@@ -23,6 +23,8 @@ const Feed = () => {
   useEffect(() => {
     getFeed();
   }, []);
+  if(!feed) return;
+  if(feed.length === 0) return <h1 className="text-bold text-2xl">No Feed found</h1>;
 
   return(
   feed && (
